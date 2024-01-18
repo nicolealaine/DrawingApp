@@ -2,6 +2,7 @@ const canvas = document.querySelector("#draw");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth - 30;
 ctx.strokeStyle = "#000000";
+ctx.lineJoin = "round";
 ctx.lineCap = "round";
 let myLineWidth = 50;
 ctx.lineWidth = myLineWidth;

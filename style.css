@@ -25,10 +25,9 @@
        justify-content: space-evenly;
        align-items: center;
        width: 98%;
-       border: 1px solid black;
        border-radius: 20px;
 
-       @media only screen and (min-width: 1050px) {
+       @media only screen and (min-width: 1500px) {
            flex-direction: row;
        }
    }
@@ -39,15 +38,25 @@
    }
 
    .color-example {
-       width: 100px;
-       height: 100px;
+       width: 80px;
+       height: 80px;
        border-radius: 15px;
        background-color: rgb(300, 200, 400);
        cursor: pointer;
+       background-image: url('brush.png');
+       background-position: center;
+       background-repeat: no-repeat;
+
+       @media only screen and (min-width: 800px) {
+           width: 100px;
+           height: 100px
+       }
    }
 
    .color {
-       padding: 10px;
+       @media only screen and (min-width: 800px) {
+           padding: 10px;
+       }
 
        & p {
            text-align: center;
@@ -58,7 +67,7 @@
    .color-picker {
        appearance: none;
        background-color: transparent;
-       width: 100px;
+       width: 80px;
        height: 50px;
        margin: 2px 0;
        border: none;
@@ -68,6 +77,11 @@
        &::-webkit-color-swatch {
            border-radius: 15px;
        }
+
+       @media only screen and (min-width: 800px) {
+           width: 100px;
+       }
+
    }
 
    .size-wrapper {
@@ -76,8 +90,13 @@
    }
 
    .size-option {
-       padding: 10px;
        cursor: pointer;
+       padding: 5px;
+
+       @media only screen and (min-width: 800px) {
+           padding: 10px;
+       }
+
    }
 
    .pencil-size {
@@ -149,4 +168,5 @@
        padding: 10px;
        font-size: 2rem;
        margin: 20px;
+       border-radius: 20px;
    }
